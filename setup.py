@@ -8,6 +8,6 @@ setup(
     install_requires=[
         "fastapi", 
         "uvicorn", 
-        "re_edge_gpt","nest_asyncio", "jinja2"
+        "re_edge_gpt","nest_asyncio", "Jinja2==3.1.2"
     ]
 )
