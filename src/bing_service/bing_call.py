@@ -25,14 +25,15 @@ async def call_bing_bot(message: str):
         print('BOT HAS BEEN INITIALED')
 
     try:
-        response = await bot.ask(
+        response = await bot.ask_stream(
             prompt=message,
             conversation_style=ConversationStyle.balanced,
             simplify_response=True,
         )
         # If you are using non-ascii characters, you need to set ensure_ascii=False
-        print(json.dumps(response, indent=2, ensure_ascii=False))
+        # print(json.dumps(response, indent=2, ensure_ascii=False))
         # Raw response
+        print(response)
         # print(response)
         assert response
         return response
