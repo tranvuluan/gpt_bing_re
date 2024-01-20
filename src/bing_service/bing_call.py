@@ -25,7 +25,7 @@ async def call_bing_bot(message: str):
         print('BOT HAS BEEN INITIALED')
 
     try:
-        response = await bot.ask_stream(
+        response = await bot.ask(
             prompt=message,
             conversation_style=ConversationStyle.balanced,
             simplify_response=True,
