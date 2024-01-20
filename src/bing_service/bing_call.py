@@ -23,7 +23,7 @@ async def call_bing_bot(message: str):
         bot = init_chatbot()
     else:
         print('BOT HAS BEEN INITIALED')
-
+    print('message: ', message)
     try:
         response = await bot.ask(
             prompt=message,
